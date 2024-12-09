@@ -34,7 +34,7 @@ const JobDescription = () => {
     };
   
     fetchSingleJob();
-  }, [jobId, dispatch, verifiedUser]);
+  }, []);
   const isInitiallyApplied =
     singleJob?.applications?.some(
       (application) => application.applicant === verifiedUser._id

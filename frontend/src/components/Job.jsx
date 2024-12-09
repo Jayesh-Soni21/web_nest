@@ -1,6 +1,5 @@
 
 import { Button } from "./ui/button";
-import { Bookmark } from "lucide-react";
 import { Avatar } from "@radix-ui/react-avatar";
 import { Badge } from "./ui/badge";
 import { useNavigate } from "react-router-dom";

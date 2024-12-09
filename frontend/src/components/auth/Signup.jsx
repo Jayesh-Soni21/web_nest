@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+
 import Navbar from "../shared/Navbar";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
@@ -11,6 +11,7 @@ import { toast } from "sonner";
 import { useDispatch, useSelector } from "react-redux";
 import { setLoading } from "@/redux/authSlice";
 import { Loader2 } from "lucide-react";
+import { useEffect, useState } from "react";
 function Signup() {
   const [input,setInput]=useState({
     fullName:"",
@@ -130,7 +131,7 @@ function Signup() {
           </div>
           {loading ? (
             <Button className="w-full my-4">
-              <Loader2 mr-2 h-4 w-4 animate-spin /> Please Wait
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" /> Please Wait
             </Button>
           ) : (
             <Button type="submit" className="w-full my-4">
